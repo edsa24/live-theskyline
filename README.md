@@ -19,6 +19,7 @@
 
 
 **Project Overview**
+
 What SkylineLiving offers is:
 
    •The user interface is clear and responsive.
