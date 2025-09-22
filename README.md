@@ -94,15 +94,14 @@ SkylineLivingWebsite/
 
 **Team Members & Contributions**
 
-**Team Member	Role / Contribution**
 
 **Edsa Mae Torrijos** - 	Project manager: Oversees website development, distributes tasks among team members, and develops the Landing Page and Properties Page
 
-**Andrea**	- Develops the Contact Page
+**Andrea Nicole Poblete**	- Develops the Contact Page
 
-**Francis**	- Develops the Homepage
+**Francis John Alintano**	- Develops the Homepage
 
-**Robert**	- Develops the About Us Page
+**Robert Cery Amisola**	- Develops the About Us Page
 
 
 
