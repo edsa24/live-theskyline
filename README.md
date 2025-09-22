@@ -23,8 +23,11 @@
 What SkylineLiving offers is:
 
    •The user interface is clear and responsive.
+   
    •Well-structured real estate listings with comprehensive details
+   
    •Simple page navigation
+   
    •Expertly designed for both desktop and mobile devices
    
 Semantic HTML, CSS styling best practices, and responsive design principles are highlighted in the project.
