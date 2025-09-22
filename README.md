@@ -105,6 +105,12 @@ SkylineLivingWebsite/
 
 
 
+
+
+
+
+
+
 **Group Collaboration**
 
 **Wireframe:** Created collaboratively by all team members to ensure consistent layout and design across all pages.
