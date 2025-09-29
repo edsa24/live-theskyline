@@ -1,141 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-       
+
+  <!-- Navigation -->
+  <nav>
     <div class="logo">
-        <a href="index.html">
-            <img src="SKYLINE LOGO/skyline logo.png" alt="Skyline Living Logo">
-        </a>
+      <a href="index.html">
+        <img src="SKYLINE LOGO/skyline logo.png" alt="Skyline Living Logo">
+      </a>
     </div>
 
+    <ul class="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="properties.html">Properties</a></li>
+      <li><a href="contactus.html" class="active">Contact us</a></li>
+    </ul>
 
-        <ul class="nav-links">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="aboutus.html">About</a></li>
-            <li><a href="properties.html">Properties</a></li>
-            <li><a href="contactus.html">Contact</a></li>
-        </ul>
+    <div class="nav-right">
+      <div class="srch">
+        <input type="text" placeholder="Search">
+        <a href="#"><i class="fas fa-search"></i></a>
+      </div>
+      <button class="navbar-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
 
-        <div class="nav-right">
-            <div class="srch">
-                <input type="text" placeholder="Search">
-                <a href="#"><i class="fas fa-search"></i></a>
-            </div>
+  <!-- Contact Section -->
+  <section class="contact-us">
+    <div class="main-content">
+      <!-- Left side -->
+      <div class="content-left">
+        <h1 class="contact-title">Contact Us</h1>
+        <h2 class="contact-subtitle">Always by your side!</h2>
+        <p class="contact-description">Helping you every step of the way to your dream home</p>
 
-            <button class="navbar-toggle" id="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+        <div class="consultation-hours">
+          <h3>Consultation Hours</h3>
+          <ul>
+            <li>Monday to Friday: 8:00 AM – 6:00 PM</li>
+            <li>Saturday: 9:00 AM – 2:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
         </div>
-    </nav>
 
-    #28a745;
-    #218838;
-}
-
-    <!-- Contact Section -->
-    <section class="contact-us">
-        <div class="main-content">
-            <div class="content-left">
-                <h1 class="contact-title">Contact Us</h1>
-                <h2 class="contact-subtitle">Always by your side!</h2>
-                <p class="contact-description">Helping you every step of the way to your dream home</p>
-               
-                <div class="consultation-hours">
-                    <h3>Consultation Hours</h3>
-                    <ul>
-                        <li>• Monday to Friday: 8:00 AM – 6:00 PM</li>
-                        <li>• Saturday: 9:00 AM – 2:00 PM</li>
-                        <li>• Sunday: Closed</li>
-                    </ul>
-                </div>
-               
-                <div class="contact-buttons">
-                    <a href="tel:63-52352355" class="btn">CALL 63-52352355</a>
-                    <a href="#" class="btn">LIVE CHAT</a>
-                </div>
-            </div>
-           
-            <div class="content-right">
-            <img src="properties/contact.png"
-                 alt="Modern luxury house" class="house-image">
-
-
-            </div>
+        <div class="contact-buttons">
+          <a href="tel:63-52352355" class="btn">CALL 63-52352355</a>
+          <a href="#" class="btn">LIVE CHAT</a>
         </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="content-right">
+        <img src="properties/contact.png" alt="Modern luxury house" class="house-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry & Reservation Forms -->
+  <div class="form-container">
+    <!-- Inquiry Form -->
+    <section class="form-inquiry">
+      <h2>Inquiry Form</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn1">Submit Inquiry</button>
+      </form>
     </section>
 
- <!-- FORM INQUIRY AND RESERVATION -->
+    <!-- Reservation Form -->
+    <section class="form-reservation">
+      <h2>Reservation Form</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact Number:</label>
+          <input type="tel" id="contact-number" name="contact-number" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-date">Reservation Date:</label>
+          <input type="date" id="reservation-date" name="reservation-date" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-time">Reservation Time:</label>
+          <input type="time" id="reservation-time" name="reservation-time" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" name="guests" min="1" required>
+        </div>
+        <button type="submit" class="btn2">Submit Reservation</button>
+      </form>
+    </section>
+  </div>
 
-    <div class="form-container">
-  <section class="form-inquiry">
-    <h2 class="h2-inquiry">Inquiry Form</h2>
-    <form action="#" method="post">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn1">Submit Inquiry</button>
-    </form>
-  </section>
+   <!-- FOOTER -->
+  <footer>
+    <div class="main-content">
 
-  <section class="form-reservation">
-    <h2 class="h2-reservation">Reservation Form</h2>
-    <form action="#" method="post">
-      <div class="form-group">
-        <label for="full-name">Full Name:</label>
-        <input type="text" id="full-name" name="full-name" required>
-      </div>
-      <div class="form-group">
-        <label for="contact-number">Contact Number:</label>
-        <input type="tel" id="contact-number" name="contact-number" required>
-      </div>
-      <div class="form-group">
-        <label for="reservation-date">Reservation Date:</label>
-        <input type="date" id="reservation-date" name="reservation-date" required>
-      </div>
-      <div class="form-group">
-        <label for="reservation-time">Reservation Time:</label>
-        <input type="time" id="reservation-time" name="reservation-time" required>
-      </div>
-      <div class="form-group">
-        <label for="guests">Number of Guests:</label>
-        <input type="number" id="guests" name="guests" min="1" required>
-      </div>
-      <button type="submit" class="btn2">Submit Reservation</button>
-    </form>
-  </section>
-</div>
-
-
-      <!-- FOOTER  -->
-      <footer>
-        <div class="main-content">
-
-      <!-- Left box -->
+      <!-- Left Box -->
       <div class="left box"> 
         <h2>SKY LIVING</h2>
         <h3>Find Your Dream Home</h3>
         <h4>Where Dreams Meet Addresses</h4>
-
         <div class="social">
           <a href="#"><span class="fab fa-facebook-f"></span></a>
           <a href="#"><span class="fab fa-twitter"></span></a>
@@ -144,46 +136,38 @@
         </div>
       </div>
 
-      <!-- Center box -->
-<div class="center box">
-  <h2>Address</h2>
-  <div class="content">
-    
-    <div class="info">
-      <i class="fas fa-map-marker-alt"></i>
-      <p>Mapua Malayan Digital Colleges</p>
-    </div>
+      <!-- Center Box -->
+      <div class="center box">
+        <h2>Address</h2>
+        <div class="content">
+          <div class="info">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Mapua Malayan Digital Colleges</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-phone-alt"></i>
+            <p>+63 912 345 6789</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-envelope"></i>
+            <p>info@skylineliving.com</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="info">
-      <i class="fas fa-phone-alt"></i>
-      <p>+63 912 345 6789</p>
-    </div>
-
-    <div class="info">
-      <i class="fas fa-envelope"></i>
-      <p>info@skylineliving.com</p>
-    </div>
-
-  </div>
-</div>
-
-
-      <!-- Right box -->
+      <!-- Right Box -->
       <div class="right box">
         <h2>Disclaimer</h2>
         <p>
-          The content, names, contacts and information provided on 
-          this website are entirely fictional, and created solely for 
+          The content, names, contacts, and information provided on 
+          this website are entirely fictional, created solely for 
           educational and school purposes. Any resemblance to real 
-          persons, properties or businesses is purely coincidental.
+          persons, properties, or businesses is purely coincidental.
         </p>
       </div>
 
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
-
-
