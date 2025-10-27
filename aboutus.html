@@ -4,187 +4,289 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>  
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-              <div class="logo">
-              <a href="index.html">
-              <img src="SKYLINE LOGO/skyline logo.png" alt="Skyline Living Logo">
-              </a></div>
-             
+      <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
 
-           <ul class="nav-links">
-              <li><a href="homepage.html">Home</a></li>
-              <li><a href="aboutus.html">About us</a></li>
-              <li><a href="properties.html">Properties</a></li> 
-              <li><a href="contactus.html">Contact us</a></li>
-           </ul>
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="SKYLINE LOGO/skyline logo.png"
+            alt="Skyline Living Logo"
+            style="height: 50px;"
+          />
+        </a>
 
-           <div class="nav-right">
-              <div class="srch">
-              <input type="text" placeholder="Search">
-              <a href="#"><i class="fas fa-search"></i></a>
-           </div>
+        <!-- Hamburger (Bootstrap toggler) -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-         <button class="navbar-toggle" id="menu-toggle">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-lg-center text-center">
+            <li class="nav-item mx-2"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="properties.html">Properties</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+
+            <!-- Search Bar -->
+            <li class="nav-item mt-2 mt-lg-0">
+              <form class="d-flex align-items-center">
+                <input
+                  class="form-control form-control-sm me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-light btn-sm" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
         </div>
-       </nav>
-
-    <!-- About Us Section -->
-
-  <section class="about-us">
-
-        <h1 class="h1-4th"> About SkyLine Living </h1>
-        <p class="paragraph"> 
-            Skyline Living creates modern, stylish, and comfortable communities designed 
-            to elevate everyday living. We combine thoughtful design, premium amenities,
-             and a vibrant community atmosphere to provide homes where families and 
-             professionals can thrive. Our mission is to make every property a place of 
-             comfort, convenience, and lasting value
-
+      </div>
+    </nav>
+        
     </section>
-    <!-- Mission Vision Goal-->
-    <!-- Mission Vision Goal Section -->
-<section class="mission-vision-goal">
-    <div class="mission">
-        <h2>Mission</h2>
-        <p>
-            To create modern, stylish, and comfortable communities that enhance the quality of life for every resident, combining exceptional design, thoughtful amenities, and personalized service.
-        </p>
-    </div>
 
-    <div class="vision">
-        <h2>Vision</h2>
-        <p>
-            To be a premier real estate developer creating innovative, sustainable, and vibrant communities where families and professionals thrive in safe, inspiring, and modern living environments.
-        </p>
-    </div>
+   <!-- About Us Section -->
+<section class="about-us d-flex align-items-center justify-content-center text-center" id="about-us">
+  <div class="container py-5">
+    <h1 class="display-3 fw-bold mb-4">
+      About <span class="skyline-text">SkyLine Living</span>
+    </h1>
+    <p class="lead mx-auto mb-5">
+      Skyline Living creates modern, stylish, and comfortable communities designed 
+      to elevate everyday living. We combine thoughtful design, premium amenities,
+      and a vibrant community atmosphere to provide homes you'll love.
+    </p>
 
-    <div class="goal">
-        <h2>Goal</h2>
-        <p>
-            To provide modern, comfortable, and vibrant communities that enhance residents’ quality of life while setting new standards in real estate living.
-        </p>
+    <!-- Bootstrap Carousel -->
+    <div id="aboutCarousel" class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner rounded shadow-lg">
+        <div class="carousel-item active">
+          <img src="skyline maple/skylinemaple.jpg" class="d-block w-100" alt="SkyLine Maple">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SkyLine Maple</h5>
+            <p>Modern living in the heart of the city</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="skyline one/skylineone.jpg" class="d-block w-100" alt="SkyLine One">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SkyLine One</h5>
+            <p>Luxury homes with premium amenities</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="skyline vista/skyline vista.png" class="d-block w-100" alt="SkyLine Vista">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SkyLine Vista</h5>
+            <p>Beautiful landscapes and open spaces</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="skylinegrove/skylinegrove.webp" class="d-block w-100" alt="SkyLine Grove">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SkyLine Grove</h5>
+            <p>Comfortable and stylish community living</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </div>
+  </div>
 </section>
 
+
+    <!-- Mission Vision Goal Section -->
+<section class="mission-vision-goal text-center">
+  <div class="container">
+    <h1>Our Mission, Vision & Goal</h1>
+
+    <div class="row mt-5 g-4">
+      <div class="col-md-4">
+        <div class="mv-card p-4">
+          <h2>Mission</h2>
+          <p>
+            To create modern, stylish, and comfortable communities that enhance
+            the quality of life through thoughtful design and premium living.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mv-card p-4">
+          <h2>Vision</h2>
+          <p>
+            To become a leading real estate brand known for sustainable,
+            innovative, and community-focused developments.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mv-card p-4">
+          <h2>Goal</h2>
+          <p>
+            To redefine modern living by providing accessible, well-designed
+            spaces that enrich residents’ daily lives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <div class="line"></div>
-   <!-- Meet Our Team Section -->
-<section>
-    <h1 class="h1-5th">Meet Our Team</h1>
-    <p class="paragraph-2">
-       From project planning to client support, our team works 
-       together to ensure every experience with us is smooth, personalized, and memorable.
-    </p>
+  
+<!-- Meet Our Team Section -->
+<section class="team-members-container py-5">
+    <div class="container text-center">
+        <h1 class="team-title fw-bold mb-4">Meet Our Team</h1>
+        <p class="team-description mb-5">
+            From project planning to client support, our team works together to ensure every experience is smooth, personalized, and memorable.
+        </p>
+
+        <div class="row g-4">
+            <!-- Andrea Poblete -->
+            <div class="col-md-6 col-lg-3 fade-in">
+                <div class="card team-card border-0 h-100 shadow-sm">
+                    <img src="properties/andrea.webp" alt="Andrea Nicole Poblete" class="card-img-top team-photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Andrea Nicole Poblete</h5>
+                        <h6 class="card-subtitle mb-2">BSIT Major in Network and CyberSecurity</h6>
+                        <p>Supports and values every client.</p>
+                        <p>📞 +63 912 345 6789</p>
+                        <p>📧 andrea@skylineliving.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edsa Torrijos -->
+            <div class="col-md-6 col-lg-3 fade-in">
+                <div class="card team-card border-0 h-100 shadow-sm">
+                    <img src="properties/edsa.jpg" alt="Edsa Mae Torrijos" class="card-img-top team-photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Edsa Mae Torrijos</h5>
+                        <h6 class="card-subtitle mb-2">BSIT Major in Data Analytics</h6>
+                        <p>Ensures quality and design excellence.</p>
+                        <p>📞 +63 912 345 6789</p>
+                        <p>📧 edsa@skylineliving.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Francis Alintano -->
+            <div class="col-md-6 col-lg-3 fade-in">
+                <div class="card team-card border-0 h-100 shadow-sm">
+                    <img src="properties/francis.webp" alt="Francis John H. Alintano" class="card-img-top team-photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Francis John H. Alintano</h5>
+                        <h6 class="card-subtitle mb-2">BSIT Major in Software Development</h6>
+                        <p>Connects clients with dream properties.</p>
+                        <p>📞 +63 912 345 6789</p>
+                        <p>📧 francis@skylineliving.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robert Amisola -->
+            <div class="col-md-6 col-lg-3 fade-in">
+                <div class="card team-card border-0 h-100 shadow-sm">
+                    <img src="properties/robert.webp" alt="Robert Cery N. Amisola" class="card-img-top team-photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Robert Cery N. Amisola</h5>
+                        <h6 class="card-subtitle mb-2">BSIT Major in Network and CyberSecurity</h6>
+                        <p>Keeps projects running smoothly.</p>
+                        <p>📞 +63 912 345 6789</p>
+                        <p>📧 rocky@skylineliving.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- Team Members Container -->
-<section class="team-members-container">
-    <!-- Andrea Poblete -->
-    <div class="team-members">
-        <img src="properties/andrea.webp" alt="Andrea Nicole Poblete" class="team-photo">
-        <h3 class="h3-4th">Andrea Nicole Poblete</h3>
-        <h4 class="h4-4th">BSIT Major in Network and CyberSecurity</h4>
-        <p class="paragraph-1">Supports and values every client.</p>
-        <p class="paragraph-1">📞 +63 912 345 6789</p>
-        <p class="paragraph-1">📧 andrea@skylineliving.com</p>
-    </div>
 
-    <!-- Edsa Torrijos -->
-    <div class="team-members">
-        <img src="properties/edsa.jpg" alt="Edsa Mae Torrijos" class="team-photo">
-        <h3 class="h3-4th">Edsa Mae Torrijos</h3>
-        <h4 class="h4-4th">BSIT Major in Data Analytics</h4>
-        <p class="paragraph-1"> Ensures quality and design excellence.</p>
-        <p class="paragraph-1">📞 +63 912 345 6789</p>
-        <p class="paragraph-1">📧 edsa@skylineliving.com</p>
-    </div>
 
-    <!-- Francis Alintano -->
-    <div class="team-members">
-        <img src="properties/francis.webp" alt="Francis John H. Alintano" class="team-photo">
-        <h3 class="h3-4th">Francis John H. Alintano</h3>
-        <h4 class="h4-4th">BSIT Major in Software Development</h4>
-        <p class="paragraph-1">Connects clients with dream properties.</p>
-        <p class="paragraph-1">📞 +63 912 345 6789</p>
-        <p class="paragraph-1">📧 francis@skylineliving.com</p>
-    </div>
+ <!-- ==============================
+     FOOTER SECTION
+=============================== -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
 
-    <!-- Robert Amisola -->
-    <div class="team-members">
-        <img src="properties/robert.webp" alt="Robert Cery N. Amisola" class="team-photo">
-        <h3 class="h3-4th">Robert Cery N. Amisola</h3>
-        <h4 class="h4-4th">BSIT Major in Network and CyberSecurity</h4>
-        <p class="paragraph-1">Keeps projects running smoothly.s</p>
-        <p class="paragraph-1">📞 +63 912 345 6789</p>
-        <p class="paragraph-1">📧 rocky@skylineliving.com</p>
-    </div>
-</section>
+      <!-- Left Box -->
+      <div class="col-md-4 text-center text-md-start footer-brand">
+        <h2 class="fw-bold text-info mb-1">SKY LIVING</h2>
+        <h5 class="mb-0">Find Your Dream Home</h5>
+        <p class="mt-1 mb-3">Where Dreams Meet Addresses</p>
 
- <!-- FOOTER  -->
-  <footer>
-    <div class="main-content">
-
-      <!-- Left box -->
-      <div class="left box"> 
-        <h2>SKY LIVING</h2>
-        <h3>Find Your Dream Home</h3>
-        <h4>Where Dreams Meet Addresses</h4>
-
-        <div class="social">
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-          <a href="#"><span class="fab fa-youtube"></span></a>
+        <div class="social mt-3">
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
 
-      <!-- Center box -->
-<div class="center box">
-  <h2>Address</h2>
-  <div class="content">
-    
-    <div class="info">
-      <i class="fas fa-map-marker-alt"></i>
-      <p>Mapua Malayan Digital Colleges</p>
-    </div>
-
-    <div class="info">
-      <i class="fas fa-phone-alt"></i>
-      <p>+63 912 345 6789</p>
-    </div>
-
-    <div class="info">
-      <i class="fas fa-envelope"></i>
-      <p>info@skylineliving.com</p>
-    </div>
-
-  </div>
-</div>
-
-
-      <!-- Right box -->
-      <div class="right box">
-        <h2>Disclaimer</h2>
-        <p>
-          The content, names, contacts and information provided on 
-          this website are entirely fictional, and created solely for 
-          educational and school purposes. Any resemblance to real 
-          persons, properties or businesses is purely coincidental.
-        </p>
+      <!-- Center Box -->
+      <div class="col-md-4 text-center text-md-start">
+        <h4 class="fw-bold text-info mb-3">Address</h4>
+        <p><i class="fas fa-map-marker-alt me-2"></i> Mapua Malayan Digital Colleges</p>
+        <p><i class="fas fa-phone-alt me-2"></i> +63 912 345 6789</p>
+        <p><i class="fas fa-envelope me-2"></i> info@skylineliving.com</p>
       </div>
 
+      <!-- Right Box -->
+      <div class="col-md-4 text-center text-md-start">
+        <h4 class="fw-bold text-info mb-3">Disclaimer</h4>
+        <p class="small">
+          The content, names, contacts, and information provided on this
+          website are entirely fictional, created solely for educational and
+          school purposes. Any resemblance to real persons, properties, or
+          businesses is purely coincidental.
+        </p>
+      </div>
     </div>
-  </footer>
 
+    <hr class="mt-4" />
+    <p class="text-center small mb-0">© 2025 Skyline Living. All rights reserved.</p>
+  </div>
+</footer>
+
+ <!-- ==============================
+       JS SCRIPTS
+  =============================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="javascript.js"></script>
 
 </body>
 </html>

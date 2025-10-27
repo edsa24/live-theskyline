@@ -1,106 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skyline Living - Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>  
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <!-- HEADER SECTION -->
-  <section class="header12">
-    <div class="overlay"></div>
+  <!-- ==============================
+       HEADER SECTION
+  =============================== -->
+  <section class="header12 text-center text-white">
+  <div class="overlay"></div>
 
-    <!-- NAVIGATION -->
-    <nav> 
-      <div class="logo">
-        <a href="index.html">
-          <img src="SKYLINE LOGO/skyline logo.png" alt="Skyline Living Logo">
-        </a>
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="SKYLINE LOGO/skyline logo.png" alt="Skyline Living Logo" class="navbar-logo" />
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center text-center">
+          <li class="nav-item mx-2"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="properties.html">Properties</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li class="nav-item mt-2 mt-lg-0">
+            <form class="d-flex align-items-center search-bar">
+              <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-light btn-sm" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </li>
+        </ul>
       </div>
-
-      <ul class="nav-links">
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-        <li><a href="properties.html">Properties</a></li>
-        <li><a href="contactus.html">Contact us</a></li>
-      </ul>
-
-      <div class="nav-right">
-        <div class="srch">
-          <input type="text" placeholder="Search">
-          <a href="#"><i class="fas fa-search"></i></a>
-        </div>
-
-    <!-- Checkbox-->
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="navbar-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </label>
-  </div>
-</nav>
-
-    <!-- HEADER TEXT -->
-    <div class="header-text">
-      <h1>WELCOME TO <span class="highlight">SKYLINE LIVING</span></h1>    
-      <p>Find peace, space, and harmony within reach.</p>
-      <a href="homepage.html" class="button">VISIT US TO KNOW MORE</a>
     </div>
+  </nav>
+
+  <!-- HEADER TEXT -->
+  <div class="header-text container py-5">
+    <h1 class="fw-bold display-5 text-light">
+      WELCOME TO<br>
+      <span class="highlight skyline-text">SKYLINE LIVING</span>
+    </h1>
+    <p class="lead text-light">Find peace, space, and harmony within reach.</p>
+    <a href="homepage.html" class="btn btn-info btn-lg mt-3 fw-semibold">
+      VISIT US TO KNOW MORE
+    </a>
+  </div>
+</section>
+
+
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="main-content">
+ <!-- ==============================
+     FOOTER SECTION
+=============================== -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
 
       <!-- Left Box -->
-      <div class="left box"> 
-        <h2>SKY LIVING</h2>
-        <h3>Find Your Dream Home</h3>
-        <h4>Where Dreams Meet Addresses</h4>
-        <div class="social">
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-          <a href="#"><span class="fab fa-youtube"></span></a>
+      <div class="col-md-4 text-center text-md-start footer-brand">
+        <h2 class="fw-bold text-info mb-1">SKY LIVING</h2>
+        <h5 class="mb-0">Find Your Dream Home</h5>
+        <p class="mt-1 mb-3">Where Dreams Meet Addresses</p>
+
+        <div class="social mt-3">
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
 
       <!-- Center Box -->
-      <div class="center box">
-        <h2>Address</h2>
-        <div class="content">
-          <div class="info">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Mapua Malayan Digital Colleges</p>
-          </div>
-          <div class="info">
-            <i class="fas fa-phone-alt"></i>
-            <p>+63 912 345 6789</p>
-          </div>
-          <div class="info">
-            <i class="fas fa-envelope"></i>
-            <p>info@skylineliving.com</p>
-          </div>
-        </div>
+      <div class="col-md-4 text-center text-md-start">
+        <h4 class="fw-bold text-info mb-3">Address</h4>
+        <p><i class="fas fa-map-marker-alt me-2"></i> Mapua Malayan Digital Colleges</p>
+        <p><i class="fas fa-phone-alt me-2"></i> +63 912 345 6789</p>
+        <p><i class="fas fa-envelope me-2"></i> info@skylineliving.com</p>
       </div>
 
       <!-- Right Box -->
-      <div class="right box">
-        <h2>Disclaimer</h2>
-        <p>
-          The content, names, contacts, and information provided on 
-          this website are entirely fictional, created solely for 
-          educational and school purposes. Any resemblance to real 
-          persons, properties, or businesses is purely coincidental.
+      <div class="col-md-4 text-center text-md-start">
+        <h4 class="fw-bold text-info mb-3">Disclaimer</h4>
+        <p class="small">
+          The content, names, contacts, and information provided on this
+          website are entirely fictional, created solely for educational and
+          school purposes. Any resemblance to real persons, properties, or
+          businesses is purely coincidental.
         </p>
       </div>
-
     </div>
-  </footer>
 
+    <hr class="mt-4" />
+    <p class="text-center small mb-0">© 2025 Skyline Living. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- ==============================
+       JS SCRIPTS
+  =============================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript.js"></script>
 </body>
 </html>

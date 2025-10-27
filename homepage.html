@@ -4,173 +4,278 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>  
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <section class="homepage">
       
-         <nav>
-              <div class="logo">
-              <a href="index.html">
-              <img src="SKYLINE LOGO/skyline logo.png" alt="Skyline Living Logo">
-              </a></div>
-             
+         <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
 
-           <ul class="nav-links">
-              <li><a href="homepage.html">Home</a></li>
-              <li><a href="aboutus.html">About us</a></li>
-              <li><a href="properties.html">Properties</a></li> 
-              <li><a href="contactus.html">Contact us</a></li>
-           </ul>
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="SKYLINE LOGO/skyline logo.png"
+            alt="Skyline Living Logo"
+            style="height: 50px;"
+          />
+        </a>
 
-           <div class="nav-right">
-              <div class="srch">
-              <input type="text" placeholder="Search">
-              <a href="#"><i class="fas fa-search"></i></a>
-           </div>
+        <!-- Hamburger (Bootstrap toggler) -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-         <button class="navbar-toggle" id="menu-toggle">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-lg-center text-center">
+            <li class="nav-item mx-2"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="properties.html">Properties</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+
+            <!-- Search Bar -->
+            <li class="nav-item mt-2 mt-lg-0">
+              <form class="d-flex align-items-center">
+                <input
+                  class="form-control form-control-sm me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-light btn-sm" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
         </div>
-       </nav>
-
-        <div class="text-box">
-           <div class="overlay1"></div>
-            <h1 class="mained-title">SKYLINE LIVING</h1>
-                <h2 class="subbed-title">Find Your Dream Home</h2>
-                <h2 class="subbed-title">Where Dreams Meet Addresses.</h2>
-        </div>
+      </div>
+    </nav>
         
-    </section>
-
-   <!-- Why Choose Us Section -->
-        <section class="why-choose-us">
-            <div>
-                <h2>Why Choose Us?</h2>
-                <p>Trusted Listings - Verified homes you can rely on.</p>
-                <p>Easy Process - Hassle-free steps from search to move-in.</p>
-                <p>Dedicated Agents - Expert support every step of the way.</p>
-            </div>
-        <!-- Featured Properties Section -->
-<section class="featured-properties">
-    <div class="container">
-        <h2>Featured Products</h2>
-
-        <!-- Property 1 -->
-        <div class="property">
-            <img src="skyline one/skylineone.jpg" alt="Skyline One" class="property-img left">
-            <div class="property-text right">
-                <h3>Skyline One</h3>
-                <p>
-                    A modern condo unit designed for young professionals who want stylish and convenient urban living. It offers breathtaking skyline views,
-                    access to premium amenities, and a comfortable, contemporary lifestyle.
-                </p>
-               
-            </div>
-        </div>
-
-        <!-- Property 2 -->
-        <div class="property">
-            <img src="skylinegrove/skylinegrove.webp" alt="Skyline Grove" class="property-img right">
-            <div class="property-text left">
-                <h3>Skyline Grove</h3>
-                <p>
-                    A cozy and family-friendly home ideal for growing families. It combines comfort, safety, and community living,
-                    with outdoor spaces perfect for relaxation and family activities.
-                </p>
-              
-            </div>
-        </div>
-
-        <!-- Property 3 -->
-        <div class="property">
-            <img src="skyline maple/skylinemaple.jpg" alt="Skyline Maple" class="property-img left">
-            <div class="property-text right">
-                <h3>Skyline Maple</h3>
-                <p>
-                    A chic condo unit tailored for couples or small families seeking a blend of comfort and modern amenities.
-                    It offers a serene living environment with access to lush garden spaces and essential facilities.
-                </p>
-              
-            </div>
-        </div>
-
-        <!-- Property 4 -->
-        <div class="property">
-            <img src="skyline vista/skyline vista.png" alt="Skyline Vista" class="property-img right">
-            <div class="property-text left">
-                <h3>Skyline Vista</h3>
-                <p>
-                    A spacious house and lot package perfect for families looking for room to grow. It features modern design,
-                    ample outdoor space, and a friendly neighborhood atmosphere.
-                </p>
-              
-            </div>
-        </div>
+   <!-- WHY CHOOSE US SECTION -->
+<section class="why-choose-us py-5">
+  <div class="container text-center text-light">
+    
+    <!-- Section Header -->
+    <div class="mb-5">
+      <h2 class="fw-bold mb-3 text-uppercase animate-title">Why Choose Us?</h2>
+      <p class="lead custom-color">We make finding your dream home easy, secure, and stress-free.</p>
 
     </div>
-</section>
 
-     <!-- FOOTER  -->
-  <footer>
-    <div class="main-content">
-
-      <!-- Left box -->
-      <div class="left box"> 
-        <h2>SKY LIVING</h2>
-        <h3>Find Your Dream Home</h3>
-        <h4>Where Dreams Meet Addresses</h4>
-
-        <div class="social">
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-          <a href="#"><span class="fab fa-youtube"></span></a>
+    <!-- Cards -->
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="choose-card card h-100 p-4 border-0 rounded-4 shadow-lg">
+          <div class="card-body">
+            <i class="fas fa-check-circle fa-3x mb-3 text-info"></i>
+            <h5 class="fw-bold mb-2">Trusted Listings</h5>
+            <p class="text-light opacity-75">Verified homes you can rely on for a safe investment.</p>
+          </div>
         </div>
       </div>
 
-      <!-- Center box -->
-<div class="center box">
-  <h2>Address</h2>
-  <div class="content">
-    
-    <div class="info">
-      <i class="fas fa-map-marker-alt"></i>
-      <p>Mapua Malayan Digital Colleges</p>
+      <!-- Card 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="choose-card card h-100 p-4 border-0 rounded-4 shadow-lg">
+          <div class="card-body">
+            <i class="fas fa-bolt fa-3x mb-3 text-info"></i>
+            <h5 class="fw-bold mb-2">Easy Process</h5>
+            <p class="text-light opacity-75">Hassle-free steps from search to move-in.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="choose-card card h-100 p-4 border-0 rounded-4 shadow-lg">
+          <div class="card-body">
+            <i class="fas fa-handshake fa-3x mb-3 text-info"></i>
+            <h5 class="fw-bold mb-2">Dedicated Agents</h5>
+            <p class="text-light opacity-10">Expert support every step of the way.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="info">
-      <i class="fas fa-phone-alt"></i>
-      <p>+63 912 345 6789</p>
+    <!-- Call to Action -->
+    <div class="mt-5">
+      <a href="#listings" class="btn btn-info btn-lg fw-bold shadow px-5 py-3 rounded-pill">
+        View Listings
+      </a>
     </div>
+  </div>
+</section>
 
-    <div class="info">
-      <i class="fas fa-envelope"></i>
-      <p>info@skylineliving.com</p>
+
+
+<!-- Featured Properties Section -->
+<section class="featured-properties py-5">
+  <div class="container">
+    <h2 class="text-center featured-heading mb-5">Featured Products</h2>
+    <div class="row g-4">
+
+      <!-- Property 1 -->
+      <div class="col-lg-6">
+        <div class="card h-100 border-0 shadow-lg property-card fade-in">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="skyline one/skylineone.jpg" class="img-fluid w-100 h-100 object-fit-cover rounded-start property-img" alt="Skyline One" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+            <div class="col-md-7 bg-lightblue d-flex align-items-center">
+              <div class="card-body">
+                <h5 class="card-title property-title">Skyline One</h5>
+                <p class="card-text text-dark">
+                  A modern condo unit designed for young professionals who want stylish and convenient urban living. It offers breathtaking skyline views,
+                  access to premium amenities, and a comfortable, contemporary lifestyle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 2 -->
+      <div class="col-lg-6">
+        <div class="card h-100 border-0 shadow-lg property-card fade-in">
+          <div class="row g-0 flex-row-reverse">
+            <div class="col-md-5">
+              <img src="skylinegrove/skylinegrove.webp" class="img-fluid w-100 h-100 object-fit-cover rounded-start property-img" alt="Skyline Grove" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+            <div class="col-md-7 bg-lightblue d-flex align-items-center">
+              <div class="card-body">
+                <h5 class="card-title property-title"> Skyline Grove</h5>
+                <p class="card-text text-dark">
+                  A cozy and family-friendly home ideal for growing families. It combines comfort, safety, and community living,
+                  with outdoor spaces perfect for relaxation and family activities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 3 -->
+      <div class="col-lg-6">
+        <div class="card h-100 border-0 shadow-lg property-card fade-in">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="skyline maple/skylinemaple.jpg" class="img-fluid w-100 h-100 object-fit-cover rounded-start property-img" alt="Skyline Maple" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+            <div class="col-md-7 bg-lightblue d-flex align-items-center">
+              <div class="card-body">
+               <h5 class="card-title property-title">Skyline Maple</h5>
+                <p class="card-text text-dark">
+                  A chic condo unit tailored for couples or small families seeking a blend of comfort and modern amenities.
+                  It offers a serene living environment with access to lush garden spaces and essential facilities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 4 -->
+      <div class="col-lg-6">
+        <div class="card h-100 border-0 shadow-lg property-card fade-in">
+          <div class="row g-0 flex-row-reverse">
+            <div class="col-md-5">
+              <img src="skyline vista/skyline vista.png" class="img-fluid w-100 h-100 object-fit-cover rounded-start property-img" alt="Skyline Vista" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+            <div class="col-md-7 bg-lightblue d-flex align-items-center">
+              <div class="card-body">
+                <h5 class="card-title property-title">Skyline Vista</h5>
+                <p class="card-text text-dark">
+                  A spacious house and lot package perfect for families looking for room to grow. It features modern design,
+                  ample outdoor space, and a friendly neighborhood atmosphere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+</section>
 
+<!-- Modal for image preview -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0">
+        <img src="" id="modalImage" class="img-fluid w-100" alt="Preview">
+      </div>
+    </div>
   </div>
 </div>
 
+ <!-- ==============================
+     FOOTER SECTION
+=============================== -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
 
-      <!-- Right box -->
-      <div class="right box">
-        <h2>Disclaimer</h2>
-        <p>
-          The content, names, contacts and information provided on 
-          this website are entirely fictional, and created solely for 
-          educational and school purposes. Any resemblance to real 
-          persons, properties or businesses is purely coincidental.
-        </p>
+      <!-- Left Box -->
+      <div class="col-md-4 text-center text-md-start footer-brand">
+        <h2 class="fw-bold text-info mb-1">SKY LIVING</h2>
+        <h5 class="mb-0">Find Your Dream Home</h5>
+        <p class="mt-1 mb-3">Where Dreams Meet Addresses</p>
+
+        <div class="social mt-3">
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
+        </div>
       </div>
 
+      <!-- Center Box -->
+      <div class="col-md-4 text-center text-md-start">
+        <h4 class="fw-bold text-info mb-3">Address</h4>
+        <p><i class="fas fa-map-marker-alt me-2"></i> Mapua Malayan Digital Colleges</p>
+        <p><i class="fas fa-phone-alt me-2"></i> +63 912 345 6789</p>
+        <p><i class="fas fa-envelope me-2"></i> info@skylineliving.com</p>
+      </div>
+
+      <!-- Right Box -->
+      <div class="col-md-4 text-center text-md-start">
+        <h4 class="fw-bold text-info mb-3">Disclaimer</h4>
+        <p class="small">
+          The content, names, contacts, and information provided on this
+          website are entirely fictional, created solely for educational and
+          school purposes. Any resemblance to real persons, properties, or
+          businesses is purely coincidental.
+        </p>
+      </div>
     </div>
-  </footer>
+
+    <hr class="mt-4" />
+    <p class="text-center small mb-0">© 2025 Skyline Living. All rights reserved.</p>
+  </div>
+</footer>
+
+ <!-- ==============================
+       JS SCRIPTS
+  =============================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript.js"></script>
 
 </body>
 </html>
