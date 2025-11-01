@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const reservationForm = document.querySelector('.form-reservation form');
     
     // Regular expressions for validation
-    const nameRegex = /^[A-Za-z.]+$/;  // Only letters and periods
+    const nameRegex = /^[A-Za-z- ]+$/;
     const contactRegex = /^\d{11}$/;    // Exactly 11 digits
     
     // Validate name fields (works for both forms)
     function validateName(input) {
         const value = input.value.trim();
         if (!nameRegex.test(value)) {
-            input.setCustomValidity('Please use only letters and periods');
+            input.setCustomValidity('Please use only letters only');
             return false;
         }
         input.setCustomValidity('');
