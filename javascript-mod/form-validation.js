@@ -51,18 +51,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         if (contactInput) {
-            // Restrict input to numbers only
-            contactInput.addEventListener('keypress', (e) => {
-                if (!/^\d$/.test(e.key)) {
-                    e.preventDefault();
-                }
-            });
-            
-            // Limit to 11 characters
-            contactInput.setAttribute('maxlength', '11');
-            
-            // Validate on input
-            contactInput.addEventListener('input', () => validateContact(contactInput));
+                // Restrict input to numbers only
+                contactInput.addEventListener('keypress', (e) => {
+                    if (!/^\d$/.test(e.key)) {
+                        e.preventDefault();
+                    }
+                });
+
+                // Limit to 13 characters (for formatted: XXXX-XXX-XXXX)
+                contactInput.setAttribute('maxlength', '13');
+
+                // Format as XXXX-XXX-XXXX while typing
+                contactInput.addEventListener('input', (e) => {
+                    let digits = contactInput.value.replace(/\D/g, '').slice(0, 11);
+                    let formatted = digits;
+                    if (digits.length > 4 && digits.length <= 7) {
+                        formatted = digits.slice(0,4) + '-' + digits.slice(4);
+                    } else if (digits.length > 7) {
+                        formatted = digits.slice(0,4) + '-' + digits.slice(4,7) + '-' + digits.slice(7);
+                    }
+                    contactInput.value = formatted;
+                    // Validate only the digits
+                    contactInput.setCustomValidity('');
+                    if (digits.length !== 11) {
+                        contactInput.setCustomValidity('Please enter exactly 11 digits');
+                    }
+                });
         }
     }
     
