@@ -266,7 +266,7 @@ nav .logo img:hover {
     #a6d8ff 80%,
     #66d9ff 100%
   );
-  position: with font-seize of 2remrelative;
+  position: relative;
   overflow: hidden;
   margin-top: 90px;
   padding-bottom: 80px;
@@ -475,7 +475,6 @@ nav .logo img:hover {
   .property-text p {
     font-size: 0.95rem;
   }
-  
 }
 
 
@@ -510,22 +509,6 @@ nav .logo img:hover {
   text-align: center;
 }
 
-  .property-text p {
-    font-size: 0.95rem;
-  }
-  .why-choose-us p {
-    font-size: 1rem;
-  }
-  
-
-  .choose-card p {
-    color: #d3dad9;
-    font-size: 0.95rem;
-  }
-  .header-text p {
-    color: #d3dad9;
-    font-size: 1.2rem;
-
 /* Carousel Styling */
 #aboutCarousel .carousel-inner {
   border-radius: 15px;
@@ -551,7 +534,6 @@ nav .logo img:hover {
 #aboutCarousel .carousel-caption p {
   font-size: 1rem;
 }
-
 
 /* Carousel controls */
 .carousel-control-prev-icon,
@@ -608,7 +590,6 @@ nav .logo img:hover {
   font-size: 1rem;
   line-height: 1.7;
 }
-
 
 /* Bootstrap layout adjustments */
 .row {
@@ -682,7 +663,7 @@ nav .logo img:hover {
     padding: 80px 15px;
   }
 
-  h1.about-us  {
+  .about-us h1 {
     font-size: 2.5rem;
   }
 
@@ -718,7 +699,6 @@ nav .logo img:hover {
     font-size: 1rem;
     text-align: center;
   }
-  
 
   .carousel-inner img {
     height: 300px;
@@ -1468,7 +1448,6 @@ footer .left h3 {
   font-weight: 500;
 }
 
-
 footer .left h4 {
   margin-bottom: 30px;
   font-size: 16px;
@@ -1521,7 +1500,6 @@ footer .right p {
   font-size: 15px;
   font-weight: 400;
 }
-
 
 /* Social Icons */
 footer .social {
