@@ -239,3 +239,65 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// ============================
+// NAVBAR SEARCH (client-side find and scroll)
+// ============================
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('siteSearchForm');
+  const input = document.getElementById('siteSearchInput');
+  if (!form || !input) return;
+
+  function normalize(str) {
+    return (str || '').toString().trim().toLowerCase();
+  }
+
+  function tryHighlightAndScroll(el) {
+    if (!el) return false;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const originalBg = el.style.backgroundColor;
+    el.style.transition = 'background-color 0.6s ease';
+    el.style.backgroundColor = 'rgba(255, 235, 59, 0.5)';
+    setTimeout(() => { el.style.backgroundColor = originalBg || ''; }, 2000);
+    return true;
+  }
+
+  function findMatchElement(query) {
+    const q = normalize(query);
+    if (!q) return null;
+
+    // 1) Prefer headings
+    const headingSelector = 'h1, h2, h3, h4, h5, h6';
+    const headings = Array.from(document.querySelectorAll(headingSelector));
+    const headingHit = headings.find(h => normalize(h.innerText).includes(q));
+    if (headingHit) return headingHit;
+
+    // 2) Then broader text containers
+    const textSelector = 'section, article, p, li, a, span, div';
+    const nodes = Array.from(document.querySelectorAll(textSelector));
+    return nodes.find(n => normalize(n.innerText).includes(q)) || null;
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const query = input.value;
+    const el = findMatchElement(query);
+    if (el) {
+      tryHighlightAndScroll(el);
+    } else {
+      // If not found on this page, redirect to homepage with query param
+      window.location.href = `homepage.html?q=${encodeURIComponent(query)}`;
+    }
+  });
+  
+  // If arriving with a query param, auto-search and scroll
+  const params = new URLSearchParams(window.location.search);
+  const qParam = params.get('q');
+  if (qParam) {
+    input.value = qParam;
+    const el = findMatchElement(qParam);
+    if (el) {
+      tryHighlightAndScroll(el);
+    }
+  }
+});
+

@@ -47,14 +47,16 @@
 
             <!-- Search Bar -->
             <li class="nav-item mt-2 mt-lg-0">
-              <form class="d-flex align-items-center">
+              <form id="siteSearchForm" class="d-flex align-items-center" role="search">
                 <input
+                  id="siteSearchInput"
                   class="form-control form-control-sm me-2"
                   type="search"
-                  placeholder="Search"
+                  placeholder="Search..."
                   aria-label="Search"
+                  autocomplete="off"
                 />
-                <button class="btn btn-outline-light btn-sm" type="submit">
+                <button class="btn btn-outline-light btn-sm" type="submit" aria-label="Submit search">
                   <i class="fas fa-search"></i>
                 </button>
               </form>
@@ -115,7 +117,7 @@
 
     <!-- Call to Action -->
     <div class="mt-5">
-      <a href="#listings" class="btn btn-info btn-lg fw-bold shadow px-5 py-3 rounded-pill">
+      <a href="properties.html" class="btn btn-info btn-lg fw-bold shadow px-5 py-3 rounded-pill">
         View Listings
       </a>
     </div>
