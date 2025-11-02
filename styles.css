@@ -1157,6 +1157,7 @@ body.modal-open #main-footer {
 }
 
 
+
 /* ===============================
    CONTACT SECTION
 ============================== */
@@ -1172,16 +1173,27 @@ body.modal-open #main-footer {
   padding: 0 20px;
 }
 
+/* Main flex layout */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* <-- THIS makes both sides align at the top */
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
 /* LEFT SIDE TEXT */
 .contact-info {
-  text-align: left;
-  padding: 20px 40px;
+  flex: 1;
+  min-width: 350px;
+  color: #d3dad9;
 }
 
 .contact-title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 15px;
+  color: #0072ff;
 }
 
 .contact-subtitle {
@@ -1202,41 +1214,233 @@ body.modal-open #main-footer {
   margin-bottom: 10px;
 }
 
+.consultation-hours ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
 .consultation-hours li {
   color: #d3dad9;
   margin-bottom: 8px;
 }
 
 /* RIGHT SIDE IMAGE */
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* keep it on the right */
+  top: 1000;
+  margin-top: 0;
+}
+
 .house-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 480px;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  display: block;
-  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   object-fit: cover;
+  position: relative;
+  top: 0;
 }
 
-/* BUTTON STYLE */
-.btn-custom {
-  background-color: #007bff;
-  color: #111827;
-  border-radius: 50px;
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+/* Platform colors */
+.fb { background-color: #1877f2; }
+.gh { background-color: #333; }
+.ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.li { background-color: #0077b5; }
+
+
+
+
+
+/* ===============================
+   CHATBOT STYLES (FIXED + CLEAN)
+============================== */
+
+/* Chat Button */ 
+.chat-btn { 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #0078d7; 
+  color: white; 
+  border: none; 
+  border-radius: 50px; 
+  padding: 14px 18px; 
+  font-size: 18px; 
+  cursor: pointer; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+   transition: all 0.3s ease; z-index: 1000; 
+  } 
+  
+  .chat-btn:hover { 
+    background-color: #005fa3; 
+    transform: scale(1.05); 
+  }
+
+/* Chat Modal */
+.chat-modal {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 360px;
+  max-width: 90%;
+  z-index: 999;
+}
+
+/* Modal content */
+.chat-modal-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  max-height: 80vh;
+}
+
+/* Header */
+.chat-header {
+  background-color: #0078d7;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+}
+.chat-header h3 {
+  font-size: 18px;
+  margin: 0;
   font-weight: 600;
-  padding: 12px 28px;
-  transition: 0.3s ease;
+}
+.close-btn {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Chat body */
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Chat box */
+.chat-box {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Messages */
+.bot-message,
+.user-message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 18px;
+  max-width: 80%;
+  line-height: 1.4;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+.bot-message {
+  background-color: #e9ecef;
+  align-self: flex-start;
+  color: #333;
+}
+.user-message {
+  background-color: #0078d7;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Input area */
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+.chat-input input {
+  flex: 1;
+  padding: 12px;
   border: none;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+  font-size: 14px;
+}
+.chat-input button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.chat-input button:hover {
+  background-color: #005fa3;
 }
 
-.btn-custom:hover {
-  background-color: #00bfff;
-  transform: scale(1.05);
+/* Scrollbar Style */
+.chat-box::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
 
-/* FORMS SECTION */
+/* Responsive */
+@media (max-width: 600px) {
+  .chat-modal-content {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .chat-modal {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+
+/* ===============================
+   FORM STYLES
+============================== */
 .form-container {
   display: flex;
   gap: 80px;
@@ -1312,23 +1516,24 @@ textarea {
   width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
-
 .btn1:hover,
 .btn2:hover {
   background: #00bfff;
   transform: scale(1.03);
 }
-.bot-message {
-  font-weight: 500;
-}
 
-.user-message {
-  font-weight: 600;
-}
+ .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  #wordCount {
+    color: gray;
+    font-size: 0.9em;
+  }
 
-
-
-/* RESPONSIVENESS */
+/* ===============================
+   RESPONSIVENESS
+============================== */
 @media (max-width: 1200px) {
   .form-container {
     gap: 40px;

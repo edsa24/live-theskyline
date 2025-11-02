@@ -44,25 +44,55 @@
             <li class="nav-item mx-2"><a class="nav-link" href="aboutus.html">About Us</a></li>
             <li class="nav-item mx-2"><a class="nav-link" href="properties.html">Properties</a></li>
             <li class="nav-item mx-2"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+  <!-- Search Bar -->
+<li class="nav-item mt-2 mt-lg-0">
+  <form class="d-flex align-items-center" onsubmit="return searchSite(event)">
+    <input
+      id="searchInput"
+      class="form-control form-control-sm me-2"
+      type="search"
+      placeholder="Search..."
+      aria-label="Search"
+    />
+    <button class="btn btn-outline-light btn-sm" type="submit">
+      <i class="fas fa-search"></i>
+    </button>
+  </form>
+</li>
 
-            <!-- Search Bar -->
-            <li class="nav-item mt-2 mt-lg-0">
-              <form class="d-flex align-items-center">
-                <input
-                  class="form-control form-control-sm me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-light btn-sm" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<script>
+  function searchSite(event) {
+    event.preventDefault(); // Prevent form reload
+
+    const query = document.getElementById("searchInput").value.trim().toLowerCase();
+
+    // Define keywords and their corresponding page links
+    const pages = {
+      "landing page": "index.html",
+      "landing": "index.html",
+      "home": "homepage.html",
+      "homepage": "homepage.html",
+      "about": "aboutus.html",
+      "about us": "aboutus.html",
+      "properties": "properties.html",
+      "contact": "contactus.html",
+      "contact us": "contactus.html",
+      
+    };
+
+    // Check if query matches any page
+    if (pages[query]) {
+      window.location.href = pages[query]; // Redirect to matching page
+    } else {
+      alert("No results found for: " + query);
+    }
+  }
+</script>
+      </ul>
+    </div>
+  </div>    
+</nav>
+    </section>
         
    <!-- WHY CHOOSE US SECTION -->
 <section class="why-choose-us py-5">
@@ -115,7 +145,7 @@
 
     <!-- Call to Action -->
     <div class="mt-5">
-      <a href="#listings" class="btn btn-info btn-lg fw-bold shadow px-5 py-3 rounded-pill">
+      <a href="properties.html" class="btn btn-info btn-lg fw-bold shadow px-5 py-3 rounded-pill">
         View Listings
       </a>
     </div>
@@ -238,11 +268,11 @@
         <h5 class="mb-0">Find Your Dream Home</h5>
         <p class="mt-1 mb-3">Where Dreams Meet Addresses</p>
 
-        <div class="social mt-3">
-          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
+         <div class="social mt-3">
+          <a href="https://facebook.com" target="_blank" class="text-light me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" class="text-light me-3 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
 
@@ -275,9 +305,8 @@
        JS SCRIPTS
   =============================== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="javascript-mod/Navbar.JS" defer></script>
-  <script src="javascript-mod/smooth-scroll.js" defer></script>
-  <script src="javascript-mod/Homepage-animation.js" defer></script>
+  <script src="javascript.js"></script>
+
 </body>
 </html>
 
