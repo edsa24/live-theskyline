@@ -186,135 +186,71 @@ Skyline Living’s website exemplifies modern web development through the effect
 **Project Structure**
 
 live-theskyline-main/
-
 ├── .github\workflows           
-│
-├──static.yml
-│
+    ├──static.yml
 ├── properties/            # Property and team images
-│   │
 │   ├── about.jpg
-│   │
 │   ├── amenities.jpg
-│   │
 │   ├── andrea.webp
-│   │
 │   ├── bgcontact.jpg
-│   │
 │   ├── Blueprint.jpg
-│   │
 │   ├── consexterior.jpg
-│   │
 │   ├── contact.png
-│   │
 │   ├── edsa.jpg
-│   │
 │   ├── francis.webp
-│   │
 │   ├── genphoto.jpg
-│   │
 │   ├── home.jpg
-│   │
 │   ├── interior.jpg
-│   │
 │   ├── prop.jpg
-│   │
 │   ├── PROPERDARK.jpg
-│   │
 │   ├── PROPERPROFILE.jpg
-│   │
 │   ├── robert.webp
-│   │
 │   └── rocky.jpg
-│   
 ├── SKYLINE LOGO/
-│   │
 │   └── skyline logo.png   # Company logo
-│   
-├── SKYLINE LOGO/
-│   │
-│   └── Lskyline logo.png
-│   
-├── skyline maple/         # Skyline Maple property images
-│   │
-│   ├── Luna1.webp
-│   │
-│   ├── Luna2.webp
-│   │
-│   ├── Luna3.webp
-│   │
-│   ├── Luna4.webp
-│   │
-│   └── skylinemaple.jpg
-│   
-├── skyline one/           # Skyline One property images
-│   │
-│   ├── Crystal1.webp
-│   │
-│   ├── Crystal2.webp
-│   │
-│   ├── Crystal3.webp
-│   │
-│   ├── Crystal4.webp
-│   │
-│   ├── Crystal5.webp
-│   │
-│   ├── Crystal6.webp
-│   │
-│   ├── Crystal7.webp
-│   │
-│   ├── Crystal8.webp
-│   │
-│   └── skylineone.jpg
-│
-├── skyline vista/         # Skyline Vista property images
-│   │
-│   ├── aurora1.webp
-│   │
-│   ├── aurora2.webp
-│   │
-│   ├── aurora3.webp
-│   │
-│   ├── aurora4.webp
-│   │
-│   ├── aurora5.webp
-│   │
-│   ├── aurora6.webp
-│   │
-│   ├── aurora7.webp
-│   │
-│   └── skyline vista.png
-│   
-├── skylinegrove/          # Skyline Grove property images
-│   │
-│   ├── skylinegrove.webp
-│   │
-│   ├── zenith1.webp
-│   │
-│   ├── zenith2.webp
-│   │
-│   ├── zenith3.webp
-│   │
-│   ├── zenith4.webp
-│   │
-│   └── zenith5.webp
-│   
-├── aboutus.html           # About us page with team information
-│   
-├── contactus.html         # Contact forms and consultation
-│   
-├── homepage.html           # Main homepage with featured properties
-│   
-├── index.html              # Landing page
-│   
-├── javascript.js          # JavaScript functionality (240+ lines)
-│   
-├── properties.html       # Property listings and details
-│   
-├── README.md              # Project documentation
-│   
-├── styles.css             # Main stylesheet (1,600+ lines)
 
+├── SKYLINE LOGO/
+│   ├── Lskyline logo.png
+├── skyline maple/         # Skyline Maple property images
+│   ├── Luna1.webp
+│   ├── Luna2.webp
+│   ├── Luna3.webp
+│   ├── Luna4.webp
+│   └── skylinemaple.jpg
+├── skyline one/           # Skyline One property images
+│   ├── Crystal1.webp
+│   ├── Crystal2.webp
+│   ├── Crystal3.webp
+│   ├── Crystal4.webp
+│   ├── Crystal5.webp
+│   ├── Crystal6.webp
+│   ├── Crystal7.webp
+│   ├── Crystal8.webp
+│   └── skylineone.jpg
+├── skyline vista/         # Skyline Vista property images
+│   ├── aurora1.webp
+│   ├── aurora2.webp
+│   ├── aurora3.webp
+│   ├── aurora4.webp
+│   ├── aurora5.webp
+│   ├── aurora6.webp
+│   ├── aurora7.webp
+│   └── skyline vista.png
+├── skylinegrove/          # Skyline Grove property images
+│   ├── skylinegrove.webp
+│   ├── zenith1.webp
+│   ├── zenith2.webp
+│   ├── zenith3.webp
+│   ├── zenith4.webp
+│   └── zenith5.webp
+├── aboutus.html           # About us page with team information
+├── contactus.html         # Contact forms and consultation
+├── homepage.html           # Main homepage with featured properties
+├── index.html              # Landing page
+├── javascript.js          # JavaScript functionality (240+ lines)
+├── properties.html        # Property listings and details
+├── README.md              # Project documentation
+└── styles.css             # Main stylesheet (1,600+ lines)
 
 
 **Pages Overview**
