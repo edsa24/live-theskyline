@@ -55,7 +55,36 @@
     </button>
   </form>
 </li>
-<script src="javascript-mod/search.js"></script>
+
+<script>
+  function searchSite(event) {
+    event.preventDefault(); // Prevent form reload
+
+    const query = document.getElementById("searchInput").value.trim().toLowerCase();
+
+    // Define keywords and their corresponding page links
+    const pages = {
+      "landing page": "index.html",
+      "landing": "index.html",
+      "home": "homepage.html",
+      "homepage": "homepage.html",
+      "about": "aboutus.html",
+      "about us": "aboutus.html",
+      "properties": "properties.html",
+      "contact": "contactus.html",
+      "contact us": "contactus.html",
+     
+      
+    };
+
+    // Check if query matches any page
+    if (pages[query]) {
+      window.location.href = pages[query]; // Redirect to matching page
+    } else {
+      alert("No results found for: " + query);
+    }
+  }
+</script>
       </ul>
     </div>
   </div>    
@@ -127,6 +156,9 @@
        JS SCRIPTS
   =============================== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="javascript.js"></script>
+  <script src="javascript/about-us.js"></script>
+  <script src="javascript/homepage.js"></script>
+  <script src="javascript/navbar-scroll.js"></script>
+  <script src="javascript/smooth-scroll.js"></script>
 </body>
 </html>
